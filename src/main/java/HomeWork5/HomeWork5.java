@@ -10,11 +10,11 @@ public class HomeWork5 {
     }
 
     static void printStats(String text) {
-        //  Приведение текста к нижнему регистру, удаление запятых и точек.
+        // Приведение текста к нижнему регистру, удаление запятых и точек.
         text = text.replaceAll("[.,]", "").toLowerCase();
         System.out.println(text);
 
-        // 2. Разделение текста на слова и сбор статистики.
+        // Разделение текста на слова и сбор статистики.
         String[] words = text.split("\\s+");
         Map<Integer, List<String>> stats = new TreeMap<>();
 
